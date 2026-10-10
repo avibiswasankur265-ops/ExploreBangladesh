@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Bangladesh | Business Registration</title>
+</head>
+<body>
+    <table width="80%" align="center" cellpadding="10" cellspacing="0">
+        <tr><td align="center">
+            <h1>Hotel &amp; Restaurant Owner Registration</h1>
+            <hr>
+        </td></tr>
+        <tr><td>
+            <form action="#" method="post">
+                <fieldset><legend>Owner Information</legend>
+                    <table width="100%" cellpadding="7" cellspacing="0">
+                        <tr><td width="35%"><label for="owner-name">Owner's Full Name:</label></td><td><input type="text" id="owner-name" name="owner_name" required></td></tr>
+                        <tr><td><label for="owner-email">Email Address:</label></td><td><input type="email" id="owner-email" name="owner_email" required></td></tr>
+                        <tr><td><label for="owner-phone">Phone Number:</label></td><td><input type="tel" id="owner-phone" name="owner_phone" required></td></tr>
+                        <tr><td><label for="password">Password:</label></td><td><input type="password" id="password" name="password" required></td></tr>
+                        <tr><td><label for="confirm-password">Confirm Password:</label></td><td><input type="password" id="confirm-password" name="confirm_password" required></td></tr>
+                    </table>
+                </fieldset><br>
+                <fieldset><legend>Business Information</legend>
+                    <table width="100%" cellpadding="7" cellspacing="0">
+                        <tr><td width="35%"><label for="business-name">Business Name:</label></td><td><input type="text" id="business-name" name="business_name" required></td></tr>
+                        <tr><td><label for="business-type">Business Type:</label></td><td><select id="business-type" name="business_type" required><option value="">Choose business type</option><option>Hotel</option><option>Resort</option><option>Restaurant</option><option>Other</option></select></td></tr>
+                        <tr><td><label for="address">Business Address:</label></td><td><textarea id="address" name="address" rows="3" cols="35" required></textarea></td></tr>
+                        <tr><td><label for="district">District:</label></td><td><input type="text" id="district" name="district" required></td></tr>
+                        <tr><td><label for="contact-number">Business Contact Number:</label></td><td><input type="tel" id="contact-number" name="contact_number" required></td></tr>
+                        <tr><td><label for="business-email">Business Email:</label></td><td><input type="email" id="business-email" name="business_email"></td></tr>
+                        <tr><td><label for="description">Business Description:</label></td><td><textarea id="description" name="description" rows="4" cols="35" required></textarea></td></tr>
+                    </table>
+                </fieldset><br>
+                <fieldset><legend>Service Information</legend>
+                    <table width="100%" cellpadding="7" cellspacing="0">
+                        <tr><td width="35%"><label for="room-types">Room Types (hotels/resorts):</label></td><td><input type="text" id="room-types" name="room_types"></td></tr>
+                        <tr><td><label for="night-price">Estimated Price per Night (BDT):</label></td><td><input type="number" id="night-price" name="night_price" min="0"></td></tr>
+                        <tr><td><label for="hotel-facilities">Hotel/Resort Facilities:</label></td><td><textarea id="hotel-facilities" name="hotel_facilities" rows="3" cols="35"></textarea></td></tr>
+                        <tr><td><label for="cuisine">Cuisine Type (restaurants):</label></td><td><input type="text" id="cuisine" name="cuisine"></td></tr>
+                        <tr><td><label for="food-cost">Average Food Cost per Person (BDT):</label></td><td><input type="number" id="food-cost" name="food_cost" min="0"></td></tr>
+                        <tr><td><label for="hours">Opening Hours:</label></td><td><input type="text" id="hours" name="hours" placeholder="e.g. 9 AM - 10 PM"></td></tr>
+                        <tr><td><label for="restaurant-facilities">Restaurant Facilities:</label></td><td><textarea id="restaurant-facilities" name="restaurant_facilities" rows="3" cols="35"></textarea></td></tr>
+                    </table>
+                    <p><small>Complete the fields relevant to your business type.</small></p>
+                </fieldset><br>
+                <fieldset><legend>Business Images</legend>
+                    <table width="100%" cellpadding="7" cellspacing="0">
+                        <tr><td width="35%"><label for="business-photo">Business Logo or Photo:</label></td><td><input type="file" id="business-photo" name="business_photo" accept="image/*"></td></tr>
+                        <tr><td><label for="additional-photo">Additional Image (optional):</label></td><td><input type="file" id="additional-photo" name="additional_photo" accept="image/*"></td></tr>
+                    </table>
+                </fieldset>
+                <p><strong>Notice:</strong> Business listings may require administrator verification before publication.</p>
+                <p align="center"><input type="submit" value="Submit Registration"> <input type="reset" value="Reset"></p>
+            </form>
+        </td></tr>
+        <tr><td align="center"><p><a href="../Login/login.html">Login</a> | <a href="../Register/register.html">Registration Options</a> | <a href="../Homepage/View/homepage.html">Homepage</a></p></td></tr>
+    </table>
+</body>
+</html>
