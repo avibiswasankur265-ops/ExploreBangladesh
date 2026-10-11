@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Explore Bangladesh | Tour Guide Registration</title>
+</head>
+<body>
+
+            <center>
+
+                <h1>Tour Guide Registration</h1>
+
+            </center>
+            <br>
+        <br><br>
+        
+            <form action="#" method="post">
+                <fieldset><legend>Personal Information</legend>
+                    
+                        <label for="full-name">Full Name:</label><br><input type="text" id="full-name" name="full_name" required><br><br>
+                        <label for="email">Email Address:</label><br><input type="email" id="email" name="email" required><br><br>
+                        <label for="phone">Phone Number:</label><br><input type="tel" id="phone" name="phone" required><br><br>
+                        Gender (optional):<br><input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label> <input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label> <input type="radio" id="other" name="gender" value="Other"><label for="other">Other</label><br><br>
+                        <label for="district">Current District:</label><br><input type="text" id="district" name="district" required><br><br>
+                        <label for="address">Full Address:</label><br><textarea id="address" name="address" rows="3" cols="35" required></textarea><br><br>
+                    <br><br>
+                </fieldset><br>
+                <fieldset><legend>Account Information</legend>
+                    
+                        <label for="password">Password:</label><br><input type="password" id="password" name="password" required><br><br>
+                        <label for="confirm-password">Confirm Password:</label><br><input type="password" id="confirm-password" name="confirm_password" required><br><br>
+                    <br><br>
+                </fieldset><br>
+                <fieldset><legend>Professional Information</legend>
+                    
+                        <label for="experience">Years of Experience:</label><br><input type="number" id="experience" name="experience" min="0" required><br><br>
+                        <label for="languages">Languages Spoken:</label><br><input type="text" id="languages" name="languages" placeholder="e.g. Bangla, English" required><br><br>
+                        <label for="specialization">Specialization:</label><br><select id="specialization" name="specialization" required><option value="">Choose specialization</option><option>Beach tourism</option><option>Hill and mountain tourism</option><option>Nature and wildlife tourism</option><option>Historical tourism</option><option>Cultural tourism</option><option>Adventure tourism</option><option>Other</option></select><br><br>
+                    <br><br>
+                </fieldset><br>
+                <fieldset><legend>Service Information</legend>
+                    
+                        <label for="destinations">Districts or Destinations Covered:</label><br><textarea id="destinations" name="destinations" rows="3" cols="35" required></textarea><br><br>
+                        <label for="cost">Estimated Guiding Cost (BDT):</label><br><input type="number" id="cost" name="cost" min="0" required><br><br>
+                        <label for="duration">Tour Duration:</label><br><input type="text" id="duration" name="duration" placeholder="e.g. 1 day, 3 days" required><br><br>
+                        <label for="tourists">Maximum Number of Tourists:</label><br><input type="number" id="tourists" name="tourists" min="1" required><br><br>
+                        <label for="bio">Short Biography:</label><br><textarea id="bio" name="bio" rows="4" cols="35" required></textarea><br><br>
+                    <br><br>
+                </fieldset><br>
+                <fieldset><legend>Documents and Profile</legend>
+                    
+                        <label for="photo">Profile Photo:</label><br><input type="file" id="photo" name="photo" accept="image/*"><br><br>
+                        <label for="identity">Identification Document (optional):</label><br><input type="file" id="identity" name="identity"><br><br>
+                    <br><br>
+                </fieldset>
+                <p align="center"><input type="submit" value="Submit Registration"> <input type="reset" value="Reset"></p>
+            </form>
+        <br><br>
+        <p align="center"><a href="../Login/login.html">Login</a> | <a href="../Register/register.html">Registration Options</a> | <a href="../Homepage/View/homepage.html">Homepage</a></p><br><br>
+    <br><br>
+</body>
+</html>
