@@ -1,0 +1,139 @@
+/* Simple CSS for Traveler Registration Page - based on lecture slides */
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #eaf5ee;
+    color: #222222;
+    font-size: 16px;
+    margin: 20px;
+}
+
+h1 {
+    color: darkgreen;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.page-shell {
+    background-color: white;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px #cccccc;
+    margin: 30px auto;
+    padding: 15px;
+    max-width: 850px;
+    overflow: auto;
+}
+
+fieldset {
+    background-color: white;
+    border: 2px solid green;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    position: relative;
+}
+
+legend {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+label {
+    color: #333333;
+}
+
+input, select, textarea {
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="password"] {
+    width: 300px;
+}
+
+textarea {
+    width: 300px;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="reset"] {
+    background-color: gray;
+    border-color: gray;
+}
+
+.brand-mark {
+    color: green;
+    font-weight: bold;
+}
+
+.page-title {
+    margin: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.subtitle {
+    color: gray;
+}
+
+.form-table {
+    max-width: 760px;
+    border-spacing: 0;
+}
+
+.form-table td {
+    padding: 7px;
+}
+
+.label-cell {
+    width: 200px;
+}
+
+.form-actions {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bottom-links {
+    padding: 10px;
+}
+
+a {
+    color: green;
+    transition: color 0.3s;
+}
+
+#birth-date, #home-district {
+    background-color: #f7fff8;
+}
+
+input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+input[type="reset"]:hover {
+    background-color: #444444;
+}
+
+a:hover {
+    color: darkgreen;
+}

@@ -1,41 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Bangladesh | Login</title>
+    <link rel="stylesheet" href="../css/login.css">
 </head>
-<body>
-
-            <center>
-
-                <h1>Explore Bangladesh</h1>
-
-            </center>
-            <center><h2>Login</h2></center>
+<body class="login-page">
+    <table class="page-shell login-shell" cellpadding="10" cellspacing="0">
+        <tr><td align="center">
+            <p class="brand-mark">EXPLORE <span>BANGLADESH</span></p>
+            <h1 class="page-title">Welcome Back</h1>
+            <p class="subtitle">Sign in to continue your journey.</p>
             
-            <br>
-        <br><br>
-        
-            <form action="#" method="post">
+            <hr>
+        </td></tr>
+        <tr><td>
+            <form class="auth-form" action="#" method="post">
                 <fieldset>
                     <legend>Account Details</legend>
-                    
-                        <label for="email">Email Address:</label><br><input type="email" id="email" name="email" required><br><br>
-                        <label for="password">Password:</label><br><input type="password" id="password" name="password" required><br><br>
-                        <label for="account-type">Account Type:</label><br>
+                    <table class="form-table" cellpadding="8" cellspacing="0">
+                        <tr><td class="label-cell"><label for="email">Email Address:</label></td><td><input type="email" id="email" name="email" required></td></tr>
+                        <tr><td><label for="password">Password:</label></td><td><input type="password" id="password" name="password" required></td></tr>
+                        <tr><td><label for="account-type">Account Type:</label></td><td>
                             <select id="account-type" name="account_type" required>
                                 <option value="">Select account type</option>
                                 <option>Traveler</option><option>Tour Guide</option><option>Hotel &amp; Restaurant Owner</option><option>Administrator</option>
                             </select>
-                        <br><br>
-                        <br><input type="checkbox" id="remember" name="remember"> <label for="remember">Remember me</label><br><br>
-                        <p align="center"><input type="submit" value="Login"> <input type="reset" value="Reset"></p><br><br>
-                    <br><br>
+                        </td></tr>
+                        <tr><td></td><td><input type="checkbox" id="remember" name="remember"> <label for="remember">Remember me</label></td></tr>
+                        <tr><td colspan="2" align="center"><input type="submit" value="Login"> <input type="reset" value="Reset"></td></tr>
+                    </table>
                 </fieldset>
             </form>
-        <br><br>
-        <p align="center"><a href="../Homepage/View/homepage.html">Homepage</a> | <a href="../Register/register.html">Create an Account</a></p>
-        <br><br>
-    <br><br>
+        </td></tr>
+        <tr><td align="center">
+            <p class="bottom-links"><a href="../Homepage/View/homepage.html">Homepage</a><span>•</span><a href="../Register/register.html">Create an Account</a></p>
+        </td></tr>
+    </table>
 </body>
 </html>

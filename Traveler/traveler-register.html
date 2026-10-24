@@ -1,59 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Bangladesh | Traveler Registration</title>
+    <link rel="stylesheet" href="../css/traveler.css">
 </head>
-<body>
-
-            <center>
-
-                <h1>Traveler Registration</h1>
-
-            </center>
-            <br>
-        <br><br>
-        
-            <form action="#" method="post">
+<body class="traveler-page">
+    <table class="page-shell traveler-shell" cellpadding="10" cellspacing="0">
+        <tr><td align="center">
+            <p class="brand-mark">EXPLORE <span>BANGLADESH</span></p>
+            <h1 class="page-title">Create Your Traveler Account</h1>
+            <p class="subtitle">Your next Bangladesh adventure starts here.</p>
+            <hr>
+        </td></tr>
+        <tr><td>
+            <form class="auth-form" action="#" method="post">
                 <fieldset><legend>Personal Information</legend>
-                    
-                        <label for="full-name">Full Name:</label><br><input type="text" id="full-name" name="full_name" required><br><br>
-                        <label for="email">Email Address:</label><br><input type="email" id="email" name="email" required><br><br>
-                        <label for="phone">Phone Number:</label><br><input type="tel" id="phone" name="phone" required><br><br>
-                        <label for="birth-date">Date of Birth:</label><br><input type="date" id="birth-date" name="birth_date" required><br><br>
-                        Gender (optional):<br>
+                    <table class="form-table" cellpadding="7" cellspacing="0">
+                        <tr><td class="label-cell"><label for="full-name">Full Name:</label></td><td><input type="text" id="full-name" name="full_name" required></td></tr>
+                        <tr><td><label for="email">Email Address:</label></td><td><input type="email" id="email" name="email" required></td></tr>
+                        <tr><td><label for="phone">Phone Number:</label></td><td><input type="tel" id="phone" name="phone" required></td></tr>
+                        <tr><td><label for="birth-date">Date of Birth:</label></td><td><input type="date" id="birth-date" name="birth_date" required></td></tr>
+                        <tr><td>Gender (optional):</td><td>
                             <input type="radio" id="gender-male" name="gender" value="Male"><label for="gender-male">Male</label>
                             <input type="radio" id="gender-female" name="gender" value="Female"><label for="gender-female">Female</label>
                             <input type="radio" id="gender-other" name="gender" value="Other"><label for="gender-other">Other</label>
-                        <br><br>
-                    <br><br>
+                        </td></tr>
+                    </table>
                 </fieldset>
                 <br>
                 <fieldset><legend>Account Information</legend>
-                    
-                        <label for="password">Password:</label><br><input type="password" id="password" name="password" required><br><br>
-                        <label for="confirm-password">Confirm Password:</label><br><input type="password" id="confirm-password" name="confirm_password" required><br><br>
-                    <br><br>
+                    <table class="form-table" cellpadding="7" cellspacing="0">
+                        <tr><td class="label-cell"><label for="password">Password:</label></td><td><input type="password" id="password" name="password" required></td></tr>
+                        <tr><td><label for="confirm-password">Confirm Password:</label></td><td><input type="password" id="confirm-password" name="confirm_password" required></td></tr>
+                    </table>
                 </fieldset>
                 <br>
                 <fieldset><legend>Travel Preferences</legend>
-                    
-                        <input type="checkbox" id="beaches" name="preferences" value="Beaches"><label for="beaches">Beaches</label><br><input type="checkbox" id="hills" name="preferences" value="Mountains and hills"><label for="hills">Mountains and hills</label><br><br>
-                        <input type="checkbox" id="forests" name="preferences" value="Forests and wildlife"><label for="forests">Forests and wildlife</label><br><input type="checkbox" id="historical" name="preferences" value="Historical places"><label for="historical">Historical places</label><br><br>
-                        <input type="checkbox" id="culture" name="preferences" value="Cultural destinations"><label for="culture">Cultural destinations</label><br><input type="checkbox" id="adventure" name="preferences" value="Adventure tourism"><label for="adventure">Adventure tourism</label><br><br>
-                    <br><br>
+                    <table class="form-table" cellpadding="7" cellspacing="0">
+                        <tr><td><input type="checkbox" id="beaches" name="preferences" value="Beaches"><label for="beaches">Beaches</label></td><td><input type="checkbox" id="hills" name="preferences" value="Mountains and hills"><label for="hills">Mountains and hills</label></td></tr>
+                        <tr><td><input type="checkbox" id="forests" name="preferences" value="Forests and wildlife"><label for="forests">Forests and wildlife</label></td><td><input type="checkbox" id="historical" name="preferences" value="Historical places"><label for="historical">Historical places</label></td></tr>
+                        <tr><td><input type="checkbox" id="culture" name="preferences" value="Cultural destinations"><label for="culture">Cultural destinations</label></td><td><input type="checkbox" id="adventure" name="preferences" value="Adventure tourism"><label for="adventure">Adventure tourism</label></td></tr>
+                    </table>
                 </fieldset>
                 <br>
                 <fieldset><legend>Additional Information</legend>
-                    
-                        <label for="home-district">Home District:</label><br><input type="text" id="home-district" name="home_district" required><br><br>
-                        <label for="introduction">Short Introduction (optional):</label><br><textarea id="introduction" name="introduction" rows="4" cols="35"></textarea><br><br>
-                    <br><br>
+                    <table class="form-table" cellpadding="7" cellspacing="0">
+                        <tr><td class="label-cell"><label for="home-district">Home District:</label></td><td><input type="text" id="home-district" name="home_district" required></td></tr>
+                        <tr><td valign="top"><label for="introduction">Short Introduction (optional):</label></td><td><textarea id="introduction" name="introduction" rows="4" cols="35"></textarea></td></tr>
+                    </table>
                 </fieldset>
-                <p align="center"><input type="submit" value="Submit Registration"> <input type="reset" value="Reset"></p>
+                <p class="form-actions"><input type="submit" value="Create Account"> <input type="reset" value="Reset"></p>
             </form>
-        <br><br>
-        <p align="center"><a href="../Login/login.html">Login</a> | <a href="../Register/register.html">Registration Options</a> | <a href="../Homepage/View/homepage.html">Homepage</a></p><br><br>
-    <br><br>
+        </td></tr>
+        <tr><td align="center"><p class="bottom-links"><a href="../Login/login.html">Login</a><span>•</span><a href="../Register/register.html">Registration Options</a><span>•</span><a href="../Homepage/View/homepage.html">Homepage</a></p></td></tr>
+    </table>
 </body>
 </html>
