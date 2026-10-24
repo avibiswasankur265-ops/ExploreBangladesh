@@ -1,62 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Bangladesh | Business Registration</title>
+    <link rel="stylesheet" href="../ankstyle.css">
 </head>
 <body>
+    <header class="site-header compact-header">
+        <div class="container">
+            <h1 id="main-heading">Business Registration</h1>
+            <p class="tagline">Help travellers discover your hotel, resort, or restaurant.</p>
+        </div>
+    </header>
 
-            <center>
+    <main class="container form-page">
+        <section class="form-intro">
+            <p >BUSINESS PARTNERS</p>
+            <h2>Register your tourism business</h2>
+            <p>Fill in the information below. Complete the sections that are relevant to your business type.</p>
+            <p class="required-note">Fields marked with * are required.</p>
+        </section>
 
-                <h1>Hotel &amp; Restaurant Owner Registration</h1>
+        <form action="#" method="post" class="registration-form">
+            <fieldset class="form-section">
+                <legend>01 · Owner Information</legend>
+                <div class="form-grid">
+                    <div class="form-field"><label for="owner-name">Owner's Full Name *</label><input type="text" id="owner-name" name="owner_name" placeholder="Enter your full name" required></div>
+                    <div class="form-field"><label for="owner-email">Email Address *</label><input type="email" id="owner-email" name="owner_email" placeholder="you@example.com" required></div>
+                    <div class="form-field"><label for="owner-phone">Phone Number *</label><input type="tel" id="owner-phone" name="owner_phone" placeholder="+8801XXXXXXXXX" required></div>
+                    <div class="form-field"><label for="password">Password *</label><input type="password" id="password" name="password" placeholder="Create a password" required></div>
+                    <div class="form-field"><label for="confirm-password">Confirm Password *</label><input type="password" id="confirm-password" name="confirm_password" placeholder="Enter password again" required></div>
+                </div>
+            </fieldset>
 
-            </center>
-            <br>
-        <br><br>
-        
-            <form action="#" method="post">
-                <fieldset><legend>Owner Information</legend>
-                    
-                        <label for="owner-name">Owner's Full Name:</label><br><input type="text" id="owner-name" name="owner_name" required><br><br>
-                        <label for="owner-email">Email Address:</label><br><input type="email" id="owner-email" name="owner_email" required><br><br>
-                        <label for="owner-phone">Phone Number:</label><br><input type="tel" id="owner-phone" name="owner_phone" required><br><br>
-                        <label for="password">Password:</label><br><input type="password" id="password" name="password" required><br><br>
-                        <label for="confirm-password">Confirm Password:</label><br><input type="password" id="confirm-password" name="confirm_password" required><br><br>
-                    <br><br>
-                </fieldset><br>
-                <fieldset><legend>Business Information</legend>
-                    
-                        <label for="business-name">Business Name:</label><br><input type="text" id="business-name" name="business_name" required><br><br>
-                        <label for="business-type">Business Type:</label><br><select id="business-type" name="business_type" required><option value="">Choose business type</option><option>Hotel</option><option>Resort</option><option>Restaurant</option><option>Other</option></select><br><br>
-                        <label for="address">Business Address:</label><br><textarea id="address" name="address" rows="3" cols="35" required></textarea><br><br>
-                        <label for="district">District:</label><br><input type="text" id="district" name="district" required><br><br>
-                        <label for="contact-number">Business Contact Number:</label><br><input type="tel" id="contact-number" name="contact_number" required><br><br>
-                        <label for="business-email">Business Email:</label><br><input type="email" id="business-email" name="business_email"><br><br>
-                        <label for="description">Business Description:</label><br><textarea id="description" name="description" rows="4" cols="35" required></textarea><br><br>
-                    <br><br>
-                </fieldset><br>
-                <fieldset><legend>Service Information</legend>
-                    
-                        <label for="room-types">Room Types (hotels/resorts):</label><br><input type="text" id="room-types" name="room_types"><br><br>
-                        <label for="night-price">Estimated Price per Night (BDT):</label><br><input type="number" id="night-price" name="night_price" min="0"><br><br>
-                        <label for="hotel-facilities">Hotel/Resort Facilities:</label><br><textarea id="hotel-facilities" name="hotel_facilities" rows="3" cols="35"></textarea><br><br>
-                        <label for="cuisine">Cuisine Type (restaurants):</label><br><input type="text" id="cuisine" name="cuisine"><br><br>
-                        <label for="food-cost">Average Food Cost per Person (BDT):</label><br><input type="number" id="food-cost" name="food_cost" min="0"><br><br>
-                        <label for="hours">Opening Hours:</label><br><input type="text" id="hours" name="hours" placeholder="e.g. 9 AM - 10 PM"><br><br>
-                        <label for="restaurant-facilities">Restaurant Facilities:</label><br><textarea id="restaurant-facilities" name="restaurant_facilities" rows="3" cols="35"></textarea><br><br>
-                    <br><br>
-                    <p>Complete the fields relevant to your business type.</p>
-                </fieldset><br>
-                <fieldset><legend>Business Images</legend>
-                    
-                        <label for="business-photo">Business Logo or Photo:</label><br><input type="file" id="business-photo" name="business_photo" accept="image/*"><br><br>
-                        <label for="additional-photo">Additional Image (optional):</label><br><input type="file" id="additional-photo" name="additional_photo" accept="image/*"><br><br>
-                    <br><br>
-                </fieldset>
-                <p align="center"><input type="submit" value="Submit Registration"> <input type="reset" value="Reset"></p>
-            </form>
-        <br><br>
-        <p align="center"><a href="../Login/login.html">Login</a> | <a href="../Register/register.html">Registration Options</a> | <a href="../Homepage/View/homepage.html">Homepage</a></p><br><br>
-    <br><br>
+            <fieldset class="form-section">
+                <legend>02 · Business Information</legend>
+                <div class="form-grid">
+                    <div class="form-field"><label for="business-name">Business Name *</label><input type="text" id="business-name" name="business_name" placeholder="Enter your business name" required></div>
+                    <div class="form-field"><label for="business-type">Business Type *</label><select id="business-type" name="business_type" required><option value="">Choose business type</option><option>Hotel</option><option>Resort</option><option>Restaurant</option><option>Other</option></select></div>
+                    <div class="form-field full-width"><label for="address">Business Address *</label><textarea id="address" name="address" rows="3" placeholder="House, road, area, or nearby landmark" required></textarea></div>
+                    <div class="form-field"><label for="district">District *</label><input type="text" id="district" name="district" placeholder="e.g. Cox's Bazar" required></div>
+                    <div class="form-field"><label for="contact-number">Business Contact Number *</label><input type="tel" id="contact-number" name="contact_number" placeholder="+8801XXXXXXXXX" required></div>
+                    <div class="form-field"><label for="business-email">Business Email</label><input type="email" id="business-email" name="business_email" placeholder="business@example.com"></div>
+                    <div class="form-field full-width"><label for="description">Business Description *</label><textarea id="description" name="description" rows="4" placeholder="Tell travellers about your business" required></textarea></div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>03 · Service Information</legend>
+                <p class="section-help">Complete the fields relevant to your business type.</p>
+                <div class="form-grid">
+                    <div class="form-field"><label for="room-types">Room Types (hotels/resorts)</label><input type="text" id="room-types" name="room_types" placeholder="e.g. Single, Double, Family"></div>
+                    <div class="form-field"><label for="night-price">Estimated Price per Night (BDT)</label><input type="number" id="night-price" name="night_price" min="0" placeholder="e.g. 2500"></div>
+                    <div class="form-field full-width"><label for="hotel-facilities">Hotel/Resort Facilities</label><textarea id="hotel-facilities" name="hotel_facilities" rows="3" placeholder="e.g. Wi-Fi, parking, breakfast"></textarea></div>
+                    <div class="form-field"><label for="cuisine">Cuisine Type (restaurants)</label><input type="text" id="cuisine" name="cuisine" placeholder="e.g. Bangladeshi, Chinese"></div>
+                    <div class="form-field"><label for="food-cost">Average Food Cost per Person (BDT)</label><input type="number" id="food-cost" name="food_cost" min="0" placeholder="e.g. 500"></div>
+                    <div class="form-field"><label for="hours">Opening Hours</label><input type="text" id="hours" name="hours" placeholder="e.g. 9 AM - 10 PM"></div>
+                    <div class="form-field full-width"><label for="restaurant-facilities">Restaurant Facilities</label><textarea id="restaurant-facilities" name="restaurant_facilities" rows="3" placeholder="e.g. Family seating, takeaway"></textarea></div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>04 · Business Images</legend>
+                <div class="form-grid">
+                    <div class="form-field"><label for="business-photo">Business Logo or Photo</label><input type="file" id="business-photo" name="business_photo" accept="image/*"></div>
+                    <div class="form-field"><label for="additional-photo">Additional Image (optional)</label><input type="file" id="additional-photo" name="additional_photo" accept="image/*"></div>
+                </div>
+            </fieldset>
+
+            <div class="form-actions">
+                <input class="button" type="submit" value="Submit Registration">
+                <input class="button" type="reset" value="Reset Form">
+            </div>
+        </form>
+
+        <p class="page-links"><a href="../Homepage/View/homepage.html">← Homepage</a> <span>|</span> <a href="../Register/register.html">Registration Options</a> <span>|</span> <a href="../Login/login.html">Login</a></p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container"><p>Explore Bangladesh · Helping local businesses connect with travellers.</p></div>
+    </footer>
 </body>
 </html>

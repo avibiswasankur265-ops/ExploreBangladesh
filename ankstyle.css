@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    color: darkslategray;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Shared sticky heading */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: darkslategray;
+    color: white;
+    padding: 18px 0;
+    border-bottom: 4px solid goldenrod;
+}
+
+#main-heading {
+    margin: 0;
+    font-size: 30px;
+}
+
+.main-nav {
+    margin-top: 14px;
+}
+
+.main-nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    background-color: seagreen;
+}
+
+.tagline {
+    color: honeydew;
+    margin: 8px 0 0;
+}
+
+/* Shared panels and cards */
+.panel,
+.account-card,
+.form-section,
+.destination-card {
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px lightgray;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-text {
+    width: 65%;
+}
+
+.hero-art {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+}
+
+.hero-art img {
+    max-width: 100%;
+}
+
+.destination-grid,
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-content h3,
+.feature-item h3 {
+    color: seagreen;
+}
+
+.feature-item {
+    background-color: mintcream;
+    border-left: 4px solid goldenrod;
+    padding: 15px;
+}
+
+.account-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.account-card {
+    min-height: 310px;
+    margin: 0;
+}
+
+.account-card p {
+    min-height: 75px;
+}
+
+.account-card .button {
+    margin-top: 8px;
+}
+
+.button {
+    display: inline-block;
+    background-color: seagreen;
+    color: white;
+    text-decoration: none;
+    border: 1px solid seagreen;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: darkgreen;
+}
+
+.page-links {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.page-links a {
+    color: seagreen;
+}
+
+.page-links a:hover {
+    color: darkgreen;
+}
+
+.form-page {
+    max-width: 900px;
+}
+
+.form-section {
+    padding: 20px;
+}
+
+.form-section legend {
+    color: seagreen;
+    font-weight: bold;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.form-field {
+    min-width: 0;
+    margin-bottom: 8px;
+}
+
+.form-field.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    font-family: Arial, sans-serif;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    outline: 2px solid darkseagreen;
+}
+
+.form-actions {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.site-footer {
+    background-color: darkslategray;
+    color: honeydew;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.site-footer a {
+    color: khaki;
+}
+
+.site-footer a:hover {
+    color: white;
+}
