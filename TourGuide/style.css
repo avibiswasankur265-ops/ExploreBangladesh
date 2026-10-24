@@ -1,0 +1,160 @@
+/* General page design */
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    color: #24323a;
+    background: linear-gradient(135deg, #e0f2fe, #fce7f3);
+    margin: 0;
+    padding: 24px;
+}
+
+/* Main heading */
+h1 {
+    max-width: 680px;
+    box-sizing: border-box;
+    margin: 10px auto 25px;
+    padding: 18px 20px;
+    color: #075985;
+    background: #e0f2fe;
+    border: 2px solid #7dd3fc;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(15, 23, 42, 0.10);
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Registration form card */
+form {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.13);
+}
+
+/* Form sections */
+fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fbfdff;
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+}
+
+/* Section headings */
+legend {
+    padding: 7px 14px;
+    color: #075985;
+    background: #fce7f3;
+    border: 1px solid #fbcfe8;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Labels */
+label {
+    display: inline-block;
+    margin-bottom: 6px;
+    color: #334155;
+    font-weight: bold;
+}
+
+/* Text fields and dropdowns */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="file"],
+textarea,
+select {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 4px;
+    padding: 12px;
+    color: #1e293b;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+}
+
+    /* Highlight fields when selected */
+    input:focus,
+    textarea:focus,
+    select:focus {
+        outline: none;
+        border-color: #0284c7;
+        box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.18);
+    }
+
+/* Radio buttons */
+input[type="radio"] {
+    width: auto;
+    margin: 4px 5px 4px 0;
+    accent-color: #0284c7;
+}
+
+/* Submit and reset buttons */
+input[type="submit"],
+input[type="reset"] {
+    margin: 5px;
+    padding: 12px 22px;
+    color: #ffffff;
+    background: #ef4444;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+    /* Button hover effect */
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        background: #ec4899;
+        transform: translateY(-4px);
+    }
+
+/* Navigation links */
+a {
+    color: #0369a1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #7c3aed;
+        text-decoration: underline;
+    }
+
+/* Responsive design for smaller screens */
+@media (max-width: 700px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 16px;
+    }
+
+    h1 {
+        padding: 14px;
+        font-size: 25px;
+    }
+
+    fieldset {
+        padding: 14px;
+    }
+}
