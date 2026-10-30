@@ -1,0 +1,143 @@
+/* External CSS for Admin form */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f8;
+    color: #243247;
+}
+
+header {
+    background: #164e63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1, header h2 {
+    margin: 6px;
+}
+
+main {
+    width: 90%;
+    max-width: 650px;
+    margin: 25px auto;
+}
+
+form {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #ccd5dc;
+}
+
+fieldset {
+    border: 1px solid #b8c8d1;
+    border-radius: 7px;
+    margin-bottom: 18px;
+    padding: 15px;
+}
+
+legend {
+    color: #164e63;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="file"], select, textarea {
+    width: 100%;
+    padding: 9px;
+    margin-top: 5px;
+    border: 1px solid #aab8c2;
+    border-radius: 5px;
+    font: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #9bd5d0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.check-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.check-row label {
+    font-weight: normal;
+}
+
+small {
+    display: block;
+    color: #c62828;
+    min-height: 16px;
+}
+
+.error {
+    border: 1px solid #c62828 !important;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+button {
+    background: #14756f;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 22px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #0d5551;
+}
+
+button.reset {
+    background: #dce3e8;
+    color: #243247;
+}
+
+button.reset:hover {
+    background: #c3cdd5;
+}
+
+#form-message {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 18px;
+}
+
+footer a {
+    color: #164e63;
+}
+
+@media (max-width: 500px) {
+    main {
+        width: 96%;
+    }
+
+    form {
+        padding: 14px;
+    }
+}
