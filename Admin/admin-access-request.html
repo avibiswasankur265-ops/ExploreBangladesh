@@ -3,6 +3,7 @@
 <head>
 
     <title>Explore Bangladesh | Admin Access Request</title>
+    <link rel="stylesheet" href="../ankstyle.css">
 </head>
 <body>
 
@@ -14,16 +15,16 @@
             <br>
         <br>
         
-            <form action="#" method="post">
+            <form action="#" method="post" id="admin-form" novalidate>
                 <fieldset>
                     <legend>Applicant Information</legend>
                     
-                        <label for="applicant-name">Name:</label><br><input type="text" id="applicant-name" name="applicant_name" required><br><br>
-                        <label for="official-email">Official Email:</label><br><input type="email" id="official-email" name="official_email" required><br><br>
-                        <label for="phone">Phone:</label><br><input type="tel" id="phone" name="phone" required><br><br>
-                        <label for="organization">Organization:</label><br><input type="text" id="organization" name="organization" required><br><br>
-                        <label for="designation">Current Designation:</label><br><input type="text" id="designation" name="designation" required><br><br>
-                        <label for="employee-id">Employee ID:</label><br><input type="text" id="employee-id" name="employee_id" required><br><br>
+                        <label for="applicant-name">Name:</label><br><input type="text" id="applicant-name" name="applicant_name"><br><br>
+                        <label for="official-email">Official Email:</label><br><input type="email" id="official-email" name="official_email"><br><br>
+                        <label for="phone">Phone:</label><br><input type="tel" id="phone" name="phone"><br><br>
+                        <label for="organization">Organization:</label><br><input type="text" id="organization" name="organization"><br><br>
+                        <label for="designation">Current Designation:</label><br><input type="text" id="designation" name="designation"><br><br>
+                        <label for="employee-id">Employee ID:</label><br><input type="text" id="employee-id" name="employee_id"><br><br>
                     <br><br>
                 </fieldset>
                 <br>
@@ -31,22 +32,23 @@
                     <legend>Access Request</legend>
                     
                         <label for="requested-role">Requested Role:</label><br>
-                            <select id="requested-role" name="requested_role" required>
+                            <select id="requested-role" name="requested_role">
                                 <option value="">Select</option>
                                 <option>Data Manager</option>
                                 <option>User Manager</option>
                                 <option>System Administrator</option>
                             </select>
                         <br><br>
-                        <label for="reason">Reason for Request:</label><br><textarea id="reason" name="reason" rows="4" cols="35" required></textarea><br><br>
+                        <label for="reason">Reason for Request:</label><br><textarea id="reason" name="reason" rows="4" cols="35"></textarea><br><br>
                         <label for="supporting-document">Supporting Document:</label><br><input type="file" id="supporting-document" name="supporting_document"><br><br>
                     <br><br>
                 </fieldset>
                 <br>
                 <fieldset>
                     <legend>Confirmation</legend>
-                    <p><input type="checkbox" id="confirm-accuracy" name="confirm_accuracy" required> <label for="confirm-accuracy">I confirm that the information provided is accurate.</label></p>
+                    <p><input type="checkbox" id="confirm-accuracy" name="confirm_accuracy"> <label for="confirm-accuracy">I confirm that the information provided is accurate.</label></p>
                 </fieldset>
+                <p id="admin-message" class="validation-message"></p>
                 <p align="center"><input type="submit" value="Submit"> <input type="reset" value="Reset"></p>
             </form>
         <br><br>

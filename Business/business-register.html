@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Bangladesh | Business Registration</title>
     <link rel="stylesheet" href="../ankstyle.css">
 </head>
@@ -19,31 +17,30 @@
             <p >BUSINESS PARTNERS</p>
             <h2>Register your tourism business</h2>
             <p>Fill in the information below. Complete the sections that are relevant to your business type.</p>
-            <p class="required-note">Fields marked with * are required.</p>
         </section>
 
-        <form action="#" method="post" class="registration-form">
+        <form novalidate action="#" method="post" class="registration-form" id="business-form" onsubmit="return businessValidation()">
             <fieldset class="form-section">
                 <legend>01 · Owner Information</legend>
                 <div class="form-grid">
-                    <div class="form-field"><label for="owner-name">Owner's Full Name *</label><input type="text" id="owner-name" name="owner_name" placeholder="Enter your full name" required></div>
-                    <div class="form-field"><label for="owner-email">Email Address *</label><input type="email" id="owner-email" name="owner_email" placeholder="you@example.com" required></div>
-                    <div class="form-field"><label for="owner-phone">Phone Number *</label><input type="tel" id="owner-phone" name="owner_phone" placeholder="+8801XXXXXXXXX" required></div>
-                    <div class="form-field"><label for="password">Password *</label><input type="password" id="password" name="password" placeholder="Create a password" required></div>
-                    <div class="form-field"><label for="confirm-password">Confirm Password *</label><input type="password" id="confirm-password" name="confirm_password" placeholder="Enter password again" required></div>
+                    <div class="form-field"><label for="owner-name">Owner's Full Name *</label><input type="text" id="owner-name" name="owner_name" placeholder="Enter your full name" onkeyup="checkOwnerName()"><p id="owner-name-error" class="validation-message"></p></div>
+                    <div class="form-field"><label for="owner-email">Email Address *</label><input type="email" id="owner-email" name="owner_email" placeholder="you@example.com" onkeyup="checkOwnerEmail()"><p id="owner-email-error" class="validation-message"></p></div>
+                    <div class="form-field"><label for="owner-phone">Phone Number *</label><input type="tel" id="owner-phone" name="owner_phone" placeholder="01XXXXXXXXX" onkeyup="checkOwnerPhone()"><p id="owner-phone-error" class="validation-message"></p></div>
+                    <div class="form-field"><label for="password">Password *</label><input type="password" id="password" name="password" placeholder="Create a password" onkeyup="checkBusinessPassword(); checkConfirmPassword()"><p id="business-password-error" class="validation-message"></p></div>
+                    <div class="form-field"><label for="confirm-password">Confirm Password *</label><input type="password" id="confirm-password" name="confirm_password" placeholder="Enter password again" onkeyup="checkConfirmPassword()"><p id="confirm-password-error" class="validation-message"></p></div>
                 </div>
             </fieldset>
 
             <fieldset class="form-section">
                 <legend>02 · Business Information</legend>
                 <div class="form-grid">
-                    <div class="form-field"><label for="business-name">Business Name *</label><input type="text" id="business-name" name="business_name" placeholder="Enter your business name" required></div>
-                    <div class="form-field"><label for="business-type">Business Type *</label><select id="business-type" name="business_type" required><option value="">Choose business type</option><option>Hotel</option><option>Resort</option><option>Restaurant</option><option>Other</option></select></div>
-                    <div class="form-field full-width"><label for="address">Business Address *</label><textarea id="address" name="address" rows="3" placeholder="House, road, area, or nearby landmark" required></textarea></div>
-                    <div class="form-field"><label for="district">District *</label><input type="text" id="district" name="district" placeholder="e.g. Cox's Bazar" required></div>
-                    <div class="form-field"><label for="contact-number">Business Contact Number *</label><input type="tel" id="contact-number" name="contact_number" placeholder="+8801XXXXXXXXX" required></div>
-                    <div class="form-field"><label for="business-email">Business Email</label><input type="email" id="business-email" name="business_email" placeholder="business@example.com"></div>
-                    <div class="form-field full-width"><label for="description">Business Description *</label><textarea id="description" name="description" rows="4" placeholder="Tell travellers about your business" required></textarea></div>
+                    <div class="form-field"><label for="business-name">Business Name *</label><input type="text" id="business-name" name="business_name" placeholder="Enter your business name" onkeyup="checkBusinessName()"><p id="business-name-error" class="validation-message"></p></div>
+                    <div class="form-field"><label for="business-type">Business Type *</label><select id="business-type" name="business_type" onchange="checkBusinessType()"><option value="">Choose business type</option><option>Hotel</option><option>Resort</option><option>Restaurant</option><option>Other</option></select><p id="business-type-error" class="validation-message"></p></div>
+                    <div class="form-field full-width"><label for="address">Business Address *</label><textarea id="address" name="address" rows="3" placeholder="House, road, area, or nearby landmark" onkeyup="checkBusinessAddress()"></textarea><p id="address-error" class="validation-message"></p></div>
+                    <div class="form-field"><label for="district">District *</label><input type="text" id="district" name="district" placeholder="e.g. Cox's Bazar" onkeyup="checkDistrict()"><p id="district-error" class="validation-message"></p></div>
+                    <div class="form-field"><label for="contact-number">Business Contact Number *</label><input type="tel" id="contact-number" name="contact_number" placeholder="01XXXXXXXXX" onkeyup="checkContactNumber()"><p id="contact-number-error" class="validation-message"></p></div>
+                    <div class="form-field"><label for="business-email">Business Email</label><input type="email" id="business-email" name="business_email" placeholder="business@example.com" onkeyup="checkBusinessEmail()"><p id="business-email-error" class="validation-message"></p></div>
+                    <div class="form-field full-width"><label for="description">Business Description *</label><textarea id="description" name="description" rows="4" placeholder="Tell travellers about your business" onkeyup="checkDescription()"></textarea><p id="description-error" class="validation-message"></p></div>
                 </div>
             </fieldset>
 
@@ -52,10 +49,10 @@
                 <p class="section-help">Complete the fields relevant to your business type.</p>
                 <div class="form-grid">
                     <div class="form-field"><label for="room-types">Room Types (hotels/resorts)</label><input type="text" id="room-types" name="room_types" placeholder="e.g. Single, Double, Family"></div>
-                    <div class="form-field"><label for="night-price">Estimated Price per Night (BDT)</label><input type="number" id="night-price" name="night_price" min="0" placeholder="e.g. 2500"></div>
+                    <div class="form-field"><label for="night-price">Estimated Price per Night (BDT)</label><input type="number" id="night-price" name="night_price" placeholder="e.g. 2500"></div>
                     <div class="form-field full-width"><label for="hotel-facilities">Hotel/Resort Facilities</label><textarea id="hotel-facilities" name="hotel_facilities" rows="3" placeholder="e.g. Wi-Fi, parking, breakfast"></textarea></div>
                     <div class="form-field"><label for="cuisine">Cuisine Type (restaurants)</label><input type="text" id="cuisine" name="cuisine" placeholder="e.g. Bangladeshi, Chinese"></div>
-                    <div class="form-field"><label for="food-cost">Average Food Cost per Person (BDT)</label><input type="number" id="food-cost" name="food_cost" min="0" placeholder="e.g. 500"></div>
+                    <div class="form-field"><label for="food-cost">Average Food Cost per Person (BDT)</label><input type="number" id="food-cost" name="food_cost" placeholder="e.g. 500"></div>
                     <div class="form-field"><label for="hours">Opening Hours</label><input type="text" id="hours" name="hours" placeholder="e.g. 9 AM - 10 PM"></div>
                     <div class="form-field full-width"><label for="restaurant-facilities">Restaurant Facilities</label><textarea id="restaurant-facilities" name="restaurant_facilities" rows="3" placeholder="e.g. Family seating, takeaway"></textarea></div>
                 </div>
@@ -69,6 +66,7 @@
                 </div>
             </fieldset>
 
+            <p id="business-message" class="validation-message"></p>
             <div class="form-actions">
                 <input class="button" type="submit" value="Submit Registration">
                 <input class="button" type="reset" value="Reset Form">
@@ -81,5 +79,6 @@
     <footer class="site-footer">
         <div class="container"><p>Explore Bangladesh · Helping local businesses connect with travellers.</p></div>
     </footer>
+    <script src="../js/form-validation.js"></script>
 </body>
 </html>
